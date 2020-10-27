@@ -1,5 +1,26 @@
 $text_color: #626255;
 $primary_color: #19e490;
+@keyframes move {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes shoesScale {
+    from {
+        transform: scale(0.1);
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .header {
     background-color: black;
     // TOP-BAR
@@ -155,42 +176,171 @@ $primary_color: #19e490;
         .slideshow {
             &-bg {
                 position: relative;
-                // display: flex;
-                // justify-content: center;
-                // align-items: center;
                 .slideshow-bg__layer0 {
                     position: absolute;
-                    top: 50%;
+                    top: 60%;
                     right: 50%;
                     transform: translate(50%, -50%);
-                    width: 650px;
-                    height: 650px;
+                    width: 35vw;
+                    height: 35vw;
                     border-radius: 50%;
                     background-color: $primary_color;
                 }
     
                 .slideshow-bg__layer1 {
-    
-                }
-    
-                .slideshow-bg__layer2 {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    width: 100%;
-                    .slideshow-bg__content {
-                        display: flex;
-                        justify-content: space-between;
+                    width: 100vw;
+                    img {
+                        width: 100%;
                     }
                 }
+                
+                .slideshow__shoes-wrap {
+                    width: 37vw;
+                    position: absolute;
+                    top: 0%;
+                    right: 50%;
+                    transform: translateX(50%);
+                    img {
+                        width: 100%;
+                        animation: shoesScale 1s normal;
+                    }
+                }
+
+                .slideshow-bg__layer2 {
+                    position: absolute;
+                    top: 25%;
+                    right: 0;
+                    width: 100vw;
+                    .grid__layer2 {
+                        width: 50vw;
+                        margin: 0 auto;
+                        .slideshow-bg__content {
+                            display: flex;
+                            justify-content: space-between;
+                            .slideshow-bg__price {
+                                position: relative;
+                                span {
+                                    font-size: 2vw;
+                                    color: $primary_color;
+                                }
+
+                                .slideshow__line {
+                                    position: absolute;
+                                    top: 14%;
+                                    left: 0;
+                                    width: 19vw;
+                                    height: 2px;
+                                    background-color: black;
+                                    &-move {
+                                        height: 100%;
+                                        width: 0%;
+                                        background-color: $primary_color;
+                                        animation: move 1s ;
+                                 
+                                    }
+                                }
+                            }
+                            .slideshow-bg__with-dot {
+                                position: relative;
+                                width: 40%;
+                                z-index: 12;
+                                .slideshow-bg-dot {
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .slideshow-bg__name {
+                                    position: absolute;
+                                    top:50%;
+                                    right: 50%;
+                                    transform: translate(50%, -50%);
+                                    font-size: 1.1vw;
+                                    color: white;
+                                    letter-spacing: 1vw;
+                                    line-height: 5vw;
+                                    text-align: center;
+                                    
+                                }
+
+                                .bg-layer__arrow-btn {
+                                    position: absolute;
+                                    bottom: -20%;
+                                    right: 0;
+                                    display: flex;
+                                    .arrow-btn {
+                                        height: 40px;
+                                        width: 40px;
+                                        background-color: black;
+                                        border: none;
+                                        outline: none;
+                                        margin-left: 25px;
+                                        cursor: pointer;
+                                        border-radius: 1px;
+                                        i {
+                                            color: white;
+                                            font-size: 1.5rem;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+              
+                }
+
+                .bg-layer__with-btn {
+                    position: absolute;
+                    top: 50%;
+                    right: 25%;
+                    width: 50vw;
+                    height: 250px;
+                    &-content {
+                        display: flex;
+                        justify-content: space-between;
+                        z-index: 10;
+
+                        .bg-layer__more-btn {
+                            font-size: 1.8rem;
+                            button {
+                                height: 55px;
+                                width: 150px;
+                                background-color: black;
+                                color: white;
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
+                                border-radius: 1px;
+                                &:hover {
+                                    background-color: white;
+                                    color: black;
+                                }
+                            }
+                        }
+                        // .bg-layer__arrow-btn {
+                        //     position: absolute;
+                        //     bottom: 0;
+                        //     right: 0;
+                        //     .arrow-btn {
+                        //         height: 40px;
+                        //         width: 40px;
+                        //         background-color: black;
+                        //         border: none;
+                        //         outline: none;
+                        //         margin-left: 30px;
+                        //         cursor: pointer;
+                        //         border-radius: 1px;
+                        //         i {
+                        //             color: white;
+                        //             font-size: 1.5rem;
+                        //         }
+                        //     }
+                        // }
+                    }
+                }
+
             }
-            .slideshow__shoes-wrap {
-                position: absolute;
-                top: 0%;
-                right: 50%;
-                transform: translateX(50%);
-                border-radius: 5000px solid red;
-            }
+
         }
     }
  

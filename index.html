@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-
 </head>
 <body>
   <div class="app">
@@ -62,37 +61,59 @@
       <div class="grid__fluid">
         <section class="slideshow">
           <div class="slideshow-bg">
-            <div class="slideshow-bg__layer0">
+            <div class="slideshow-bg__layer0" id = "circle">
 
             </div>
+
             <div class="slideshow-bg__layer1">
               <img src="./assets/img/layer/layer_01.png" alt="">
             </div>
+
             <div class="slideshow__shoes-wrap">
-              <img src="./assets/img/layer/greenLayer/sneaker2-1.png" alt="">
+              <img id = "shoes-1" src="./assets/img/layer/greenLayer/sneaker2-1.png" alt="">
             </div>
 
             <div class="slideshow-bg__layer2">
-              <div class="grid">
+              <div class="grid__layer2">
                 <div class="slideshow-bg__content">
                     <div class="slideshow-bg__price">
-                      <span>$140</span>
+                      <span id = "price">$140</span>
+                      <div class="slideshow__line">
+                        <div class="slideshow__line-move">
+                      
+                        </div>
+                      </div>
                     </div>
                     <div class="slideshow-bg__with-dot">
                       <div class="slideshow-bg-dot">
                         <img src="./assets/img/layer/greenLayer/grid_dots.png" alt="">
                       </div>
                       <div class="slideshow-bg__name">
-                        <span>AIR FORCE ONE MID</span>
+                       <h1 id = "shoesName">AIR FORCE ONE MID</h1>
+                      </div>
+                      <div class="bg-layer__arrow-btn">
+                      <button class="bg-layer__left-arrow arrow-btn" onclick= "nextImg()" >
+                          <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="bg-layer__right-arrow arrow-btn " onclick= "nextImg()">
+                          <i class="fas fa-chevron-right"></i>
+                        </button>
+      
                       </div>
                     </div>
                </div>
               </div>
             </div>
-              
+
+            <div class="bg-layer__with-btn">
+              <div class="bg-layer__with-btn-content">
+                <div class="bg-layer__more-btn">
+                  <button >MORE</button>
+                </div>
+              </div>
+            </div>
       
               
-            
           </div>
           
         </section>
@@ -102,5 +123,6 @@
 
     </div>
   </div>
+  <script src="./assets/index.js"></script>
 </body>
 </html>
