@@ -21,6 +21,20 @@ $primary_color: #19e490;
     }
 }
 
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    33.33% {
+        transform: scale(1.2);
+
+    }
+    100% {
+        transform: scale(1);
+
+    }
+}
+
 .header {
     background-color: black;
     // TOP-BAR
@@ -151,6 +165,7 @@ $primary_color: #19e490;
             justify-content: center;
             list-style: none;
             font-weight: 600;
+            padding-left: 0;
             .top-nav-item {
                 margin: 30px;
                 font-size: 1.8rem;
@@ -181,7 +196,7 @@ $primary_color: #19e490;
                     top: 60%;
                     right: 50%;
                     transform: translate(50%, -50%);
-                    width: 35vw;
+                    width: 34.5vw;
                     height: 35vw;
                     border-radius: 50%;
                     background-color: $primary_color;
@@ -202,7 +217,7 @@ $primary_color: #19e490;
                     transform: translateX(50%);
                     img {
                         width: 100%;
-                        animation: shoesScale 1s normal;
+                        animation: grow 1s ease-in-out;
                     }
                 }
 
@@ -317,31 +332,202 @@ $primary_color: #19e490;
                                 }
                             }
                         }
-                        // .bg-layer__arrow-btn {
-                        //     position: absolute;
-                        //     bottom: 0;
-                        //     right: 0;
-                        //     .arrow-btn {
-                        //         height: 40px;
-                        //         width: 40px;
-                        //         background-color: black;
-                        //         border: none;
-                        //         outline: none;
-                        //         margin-left: 30px;
-                        //         cursor: pointer;
-                        //         border-radius: 1px;
-                        //         i {
-                        //             color: white;
-                        //             font-size: 1.5rem;
-                        //         }
-                        //     }
-                        // }
+                
                     }
                 }
 
-            }
 
+
+            }
+       
         }
     }
- 
+    .my-service {
+        margin-top: 120px;
+        &__list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding-left: 0;
+            .my-service__item {
+      
+                .my-service__icon {
+                    color: $primary_color;
+                    font-size: 4rem;
+                }
+                
+                .my-service__heading {
+                    color: black;
+                    font-size: 1.6rem;
+
+                }
+
+                .my-service__disc {
+                    color: $text_color;
+                    font-size: 1.4rem;
+                    opacity: 0.7;
+                    max-width: 220px;
+                  
+                }
+            }
+        }
+    }
+    .sneakers-shop {
+        margin-top: 200px;
+        .grid {
+            display: flex;
+            justify-content: space-between;
+            .wear__title {
+                font-size: 2rem;
+                text-align: center;
+                margin: 20px 0 40px 0;
+                font-weight: 600;
+            }
+            .men-wear {
+
+                .men-wear__heading {
+                    text-align: center;
+                    font-size: 4.5rem;
+                    height: 290px;
+                    line-height: 5rem;
+                    font-weight: 900;
+                }
+
+                .men-wear__img {
+                    width: 30vw;
+
+                    img {
+                        width: 100%;
+                        &:hover {
+                            animation: grow 1s ease-in-out;
+                        }
+                    }
+                }
+
+                .men-wear__join-us {
+                    padding-left: 100px;
+                    .join-us__heading {
+                        font-size: 2.6rem;
+                        line-height: 2.6rem;
+                        font-weight: 600;
+                        margin: 20px 0 40px 0;
+                        
+                    }
+
+                    .join-us__input {
+                        display: flex;
+                        input {
+                            flex: 1;
+                            outline: none;
+                            border: none;
+                            font-size: 1.5rem;
+                        }
+                        .join-us__btn {
+                            height: 70px;
+                            width: 160px;
+                            button {
+                                height: 100%;
+                                width: 100%;
+                                background-color: black;
+                                color: white;
+                                outline: none;
+                                border: none;
+                                font-size: 1.5rem;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .other-wear {
+
+                .women-footwear__img {
+                    width: 25vw;
+                    img {
+                        width: 100%;
+                        &:hover {
+                            animation: grow 1s ease-in-out;
+                        }
+                    }
+                }
+
+                .kids-footwear__img {
+                    width: 20vw;
+                    margin-top: 90px;
+                    img {
+                        width: 100%;
+                        &:hover {
+                            animation: grow 1s ease-in-out;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+      
+    }
+    .new-collection {
+        margin-top: 150px;
+        margin-bottom: 2000px;
+        &__container {
+            display: flex;
+            .adidas-img {
+                flex: 1;
+                object-fit: cover;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .center-content {
+                flex: 1;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                position: relative;
+                h4 {
+                    margin-top: 4.5vw;
+                    color: white;
+                    font-size: 1.4rem;
+                }
+                span {
+                    color: white;
+                    font-size: 4.2rem;
+                    line-height: 4.2rem;
+                    margin: 4.5vw 0;
+                }
+                .content__btn {
+                    position: absolute;
+                    bottom: 20%;
+                    height: 65px;
+                    width: 166px;
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        background-color: black;
+                        color: white;
+                        border: 2px solid $text_color;
+                        font-size: 1.4rem;
+                        cursor: pointer;
+                        &:hover {
+                            border-color: white;
+                        }
+                    }
+                }
+            }
+
+            .nike-img {
+                flex: 1;
+                object-fit: cover;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
