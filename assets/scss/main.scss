@@ -543,11 +543,20 @@ $primary_color: #19e490;
                             list-style: none;
                             transition: all 1s;
                             .carousel__item {
-                                // margin-right: 1.8vw;
+                                margin-right: 20px;
+                                .carousel__img:hover {
+                                    .carousel__img-2 {
+                                        opacity: 1;
+                                    } 
+                                }
+                                .carousel__img:hover .shoes__name {
+                                    color: $primary_color;  
+                                }
                                 .carousel__img {
                                     position: relative;
-                                    width: 320px;
+                                    width: 300px;
                                     overflow: hidden;
+                                  
                                     &-1 {
                                         width: 100%;
                                     }
@@ -557,6 +566,14 @@ $primary_color: #19e490;
                                         top: 0;
                                         left: 0;
                                         opacity: 0;
+                                        transition: all .3s;
+                                        transition-delay: .1s;
+                                        &:hover {
+                                            opacity: 1;
+                                        }
+                                        &:hover .shoes__name{
+                                            color: $primary_color;
+                                        }
                                     }
                                 }
                                 .shoes-info {
@@ -565,6 +582,7 @@ $primary_color: #19e490;
                                     .shoes__name {
                                         font-size: 1.6rem;
                                         font-weight: 600;
+
                                     }
     
                                     .shoes__price {

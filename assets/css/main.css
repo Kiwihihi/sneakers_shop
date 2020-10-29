@@ -687,9 +687,21 @@
   transition: all 1s;
 }
 
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item {
+  margin-right: 20px;
+}
+
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .carousel__img:hover .carousel__img-2 {
+  opacity: 1;
+}
+
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .carousel__img:hover .shoes__name {
+  color: #19e490;
+}
+
 .container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .carousel__img {
   position: relative;
-  width: 320px;
+  width: 300px;
   overflow: hidden;
 }
 
@@ -703,6 +715,18 @@
   top: 0;
   left: 0;
   opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .carousel__img-2:hover {
+  opacity: 1;
+}
+
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .carousel__img-2:hover .shoes__name {
+  color: #19e490;
 }
 
 .container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .shoes-info {
