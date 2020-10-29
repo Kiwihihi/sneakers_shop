@@ -26,3 +26,48 @@ p {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+// INPUT//
+
+.join-us__heading {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    font-weight: 600;
+    margin: 20px 0 40px 0;
+    
+}
+
+.join-us__heading {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    font-weight: 600;
+    margin: 20px 0 40px 0;
+    
+}
+
+.join-us__input {
+    display: flex;
+    input {
+        flex: 1;
+        outline: none;
+        border: none;
+        font-size: 1.5rem;
+        opacity: 0.6;
+        padding-left: 20px;
+    }
+    .join-us__btn {
+        height: 70px;
+        width: 160px;
+        button {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            color: white;
+            outline: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}

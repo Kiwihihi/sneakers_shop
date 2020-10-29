@@ -32,4 +32,51 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
+.join-us__heading {
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  font-weight: 600;
+  margin: 20px 0 40px 0;
+}
+
+.join-us__heading {
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  font-weight: 600;
+  margin: 20px 0 40px 0;
+}
+
+.join-us__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.join-us__input input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  padding-left: 20px;
+}
+
+.join-us__input .join-us__btn {
+  height: 70px;
+  width: 160px;
+}
+
+.join-us__input .join-us__btn button {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 /*# sourceMappingURL=base.css.map */
