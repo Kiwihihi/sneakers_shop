@@ -266,12 +266,15 @@
               <span>Latest Added</span>
             </div>
             <div class="latest-added__carousel">
-              <div class="carousel-btn carousel-btn--prev">
+              <div class="carousel-btn carousel-btn--prev" id="prev">
                 <i class="fas fa-chevron-left"></i>
               </div>
 
-              <ul class="carousel__list">
-                <li class="carousel__item">
+
+              <div class="carousel__wrap">
+                
+              <ul class="carousel__list" id="slider">
+                <li class="carousel__item" id = "slide">
                   <div class="carousel__img">
                     <img src="./assets/img/carousel/product-2-320x400_c.jpg" class="carousel__img-1" alt="">
                     <img src="./assets/img/carousel/product-2b-320x400_c.jpg" class="carousel__img-2" alt="">
@@ -285,7 +288,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="carousel__item">
+                <li class="carousel__item" id = "slide">
                   <div class="carousel__img">
                     <img class="carousel__img-1" src="./assets/img/carousel/product-3-320x400_c.jpg" alt="">
                     <img class="carousel__img-2" src="./assets/img/carousel/product-3c-320x400_c.jpg" alt="">
@@ -299,7 +302,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="carousel__item">
+                <li class="carousel__item" id = "slide">
                   <div class="carousel__img">
                     <img  class="carousel__img-1"src="./assets/img/carousel/product-4-320x400_c.jpg" alt="">
                     <img  class="carousel__img-2"src="./assets/img/carousel/product-4b-320x400_c.jpg" alt="">
@@ -313,7 +316,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="carousel__item">
+                <li class="carousel__item" id = "slide">
                   <div class="carousel__img">
                     <img  class="carousel__img-1"src="./assets/img/carousel/product-5-320x400_c.jpg" alt="">
                     <img  class="carousel__img-2"src="./assets/img/carousel/product-5b-320x400_c.jpg" alt="">
@@ -327,7 +330,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="carousel__item">
+                <li class="carousel__item" id = "slide">
                   <div class="carousel__img">
                     <img class="carousel__img-1" src="./assets/img/carousel/product-6-320x400_c.jpg" alt="">
                     <img class="carousel__img-2"src="./assets/img/carousel/product-6b-320x400_c.jpg" alt="">
@@ -341,7 +344,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="carousel__item">
+                <li class="carousel__item" id = "slide">
                   <div class="carousel__img">
                     <img class="carousel__img-1" src="./assets/img/carousel/product-7-320x400_c.jpg" alt="">
                     <img class="carousel__img-2" src="./assets/img/carousel/product-7b-320x400_c.jpg" alt="">
@@ -356,8 +359,11 @@
                   </div>
                 </li>
               </ul>
+              </div>
 
-              <div class="carousel-btn carousel-btn--next">
+
+
+              <div class="carousel-btn carousel-btn--next" id="next">
                 <i class="fas fa-chevron-right"></i>
               </div>
 

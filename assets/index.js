@@ -26,3 +26,39 @@ let nextImg = function () {
     document.getElementById('circle').style.backgroundColor = states[index].color;
 }
 setInterval(nextImg,5000);
+
+
+const imgWidth = 320;
+const img = 6;
+const sliderWidth = 1200;
+const slider = document.getElementById('slider');
+const slide = document.getElementById('slide');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+
+let id = 0;
+
+function next() {
+    if(id < 2) id++;
+    else {
+        id = 0;
+    }
+
+    slider.style.transform = `translateX(-${imgWidth*id}px)`;
+}
+
+function prev() {
+    if(id >0) id--;
+    else {
+        id = 0;
+    }
+    slider.style.transform = `translateX(-${imgWidth*id}px)`;
+}
+
+prevBtn.addEventListener('click', () => {
+    prev();
+});
+
+nextBtn.addEventListener('click', () => {
+    next();
+});

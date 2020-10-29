@@ -663,35 +663,41 @@
   height: 24px;
   font-size: 1.8rem;
   z-index: 2;
+  cursor: pointer;
 }
 
-.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__list {
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel-btn--next {
+  z-index: 5;
+}
+
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap {
+  overflow: hidden;
+}
+
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow: hidden;
   padding-left: 0;
   list-style: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__list .carousel__item {
-  margin-right: 1.2vw;
-}
-
-.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__list .carousel__item .carousel__img {
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .carousel__img {
   position: relative;
-  width: 300px;
+  width: 320px;
   overflow: hidden;
 }
 
-.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__list .carousel__item .carousel__img-1 {
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .carousel__img-1 {
   width: 100%;
 }
 
-.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__list .carousel__item .carousel__img-2 {
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .carousel__img-2 {
   width: 100%;
   position: absolute;
   top: 0;
@@ -699,7 +705,7 @@
   opacity: 0;
 }
 
-.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__list .carousel__item .shoes-info {
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .shoes-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,12 +713,12 @@
       justify-content: space-around;
 }
 
-.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__list .carousel__item .shoes-info .shoes__name {
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .shoes-info .shoes__name {
   font-size: 1.6rem;
   font-weight: 600;
 }
 
-.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__list .carousel__item .shoes-info .shoes__price {
+.container-body .latest-added .latest-added__container .grid .latest-added__carousel .carousel__wrap .carousel__list .carousel__item .shoes-info .shoes__price {
   font-size: 1.2rem;
   font-weight: 700;
   color: #19e490;

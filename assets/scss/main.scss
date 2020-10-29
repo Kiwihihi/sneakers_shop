@@ -521,60 +521,62 @@ $primary_color: #19e490;
                     display: flex;
                     align-items: center;
                     .carousel-btn {
-                        // position: absolute;
                         width: 24px;
                         height: 24px;
                         font-size: 1.8rem;
                         z-index: 2;
+                        cursor: pointer;
                     }
                     .carousel-btn--prev {
-                        // left: 0;
-                        // top: 50%;
+                      
                     }
 
                     .carousel-btn--next {
-                        // right: 0;
-                        // top: 50%;
+                        z-index: 5;
                     }
-                    .carousel__list {
-                        display: flex;
-                        justify-content: space-between;
+                    .carousel__wrap {
                         overflow: hidden;
-                        padding-left: 0;
-                        list-style: none;
-                        .carousel__item {
-                            margin-right: 1.2vw;
-                            .carousel__img {
-                                position: relative;
-                                width: 300px;
-                                overflow: hidden;
-                                &-1 {
-                                    width: 100%;
+                        .carousel__list {
+                            display: flex;
+                            justify-content: space-between;
+                            padding-left: 0;
+                            list-style: none;
+                            transition: all 1s;
+                            .carousel__item {
+                                // margin-right: 1.8vw;
+                                .carousel__img {
+                                    position: relative;
+                                    width: 320px;
+                                    overflow: hidden;
+                                    &-1 {
+                                        width: 100%;
+                                    }
+                                    &-2 {
+                                        width: 100%;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        opacity: 0;
+                                    }
                                 }
-                                &-2 {
-                                    width: 100%;
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    opacity: 0;
-                                }
-                            }
-                            .shoes-info {
-                                display: flex;
-                                justify-content: space-around;
-                                .shoes__name {
-                                    font-size: 1.6rem;
-                                    font-weight: 600;
-                                }
-
-                                .shoes__price {
-                                    font-size: 1.2rem;
-                                    font-weight: 700;
-                                    color: $primary_color;
+                                .shoes-info {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    .shoes__name {
+                                        font-size: 1.6rem;
+                                        font-weight: 600;
+                                    }
+    
+                                    .shoes__price {
+                                        font-size: 1.2rem;
+                                        font-weight: 700;
+                                        color: $primary_color;
+                                    }
                                 }
                             }
                         }
                     }
+                  
                 }
             }
         }
